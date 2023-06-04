@@ -1,0 +1,12 @@
+<div class="container"> 
+    
+    <div class="form-group">
+    <form [formGroup]="kataForFunForm" (ngSubmit)="submitNumber()">
+        <label for="numberToConvert">Number to convert</label>
+        <input formControlName="numberToConvert" type="number" class="form-control" id="numberToConvert" aria-describedby="numberToConvertHelp" placeholder="Enter the number to convert">
+        <button type="submit" class="btn btn-primary">Convert</button>
+
+    </form>
+    </div>
+
+</div>
