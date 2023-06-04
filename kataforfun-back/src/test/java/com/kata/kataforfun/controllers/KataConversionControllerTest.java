@@ -36,7 +36,7 @@ public class KataConversionControllerTest {
         when(kataConversionService.convertNumber(inputNumber)).thenReturn("KataKata");
 
         //When, Then
-        this.mockMvc.perform(get(API_URL+"/kata-conversion/"+inputNumber))
+        this.mockMvc.perform(get(API_URL+"/kata-for-fun/"+inputNumber))
                 .andDo(print()).andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.content().string(containsString("KataKata")));
 
